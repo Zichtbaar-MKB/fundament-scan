@@ -53,20 +53,22 @@
     }
     .title{ margin:0; font-size:18px; letter-spacing:.2px; }
     .subtitle{ margin:6px 0 0; color: var(--muted); font-size:13px; max-width:560px; }
-    .subtitle{ margin:6px 0 0; color: var(--muted); font-size:13px; max-width:560px; }
-
-.headerLeft{
+   .headerLeft{
   display:flex;
-  align-items:center;
-  gap:12px;
+  align-items:flex-start;
+  gap:6px;
+}
+
+.headerLeft.column{
+  flex-direction:column;
 }
 
 .logo{
-  height:40px;
+  height:60px;
   width:auto;
   object-fit:contain;
+  margin-bottom:4px;
 }
-
     .progress{
       width: 180px;
       max-width: 40%;
@@ -289,12 +291,12 @@
   <div class="wrap">
     <div class="card" role="application" aria-label="Praktijk Fundament Scan">
     <div class="header">
-  <div class="headerLeft">
-    <img src="https://marietteham.nl/wp-content/uploads/2020/02/Logo-Mariette-Ham-DIAP.png" alt="Logo Mariette Ham" class="logo">
-    <div>
-      <h1 class="title">Fundament Scan</h1>
-      <p class="subtitle">3 korte vragen (score 1–5).</p>
-    </div>
+<div class="headerLeft column">
+  <img src="https://marietteham.nl/wp-content/uploads/2020/02/Logo-Mariette-Ham-DIAP.png" alt="Logo Mariette Ham" class="logo">
+
+  <h1 class="title">Fundament Scan</h1>
+  <p class="subtitle">3 korte vragen (score 1–5).</p>
+</div>
   </div>
         <div style="min-width:190px">
           <div class="progress" aria-hidden="true"><div class="bar" id="bar"></div></div>
